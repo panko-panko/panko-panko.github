@@ -36,6 +36,29 @@ h1{margin:0 0 8px;font-size:1.6rem}
 	transition:transform .12s ease, box-shadow .12s ease;
 }
 .btn:active{transform:translateY(1px)}
+.external{display:inline-block}
+.external::after{
+	/* simple external-link indicator */
+	content:" \2197"; /* ↗ */
+	margin-left:6px;
+	font-size:0.9em;
+	opacity:0.95;
+}
+
+/* Basic responsive image rules */
+img {
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Focus styles for accessibility */
+a:focus, .btn:focus, button:focus{
+	outline:3px solid rgba(20,120,220,0.18);
+	outline-offset:3px;
+}
 .message{
 	margin-top:18px;
 	min-height:48px;
